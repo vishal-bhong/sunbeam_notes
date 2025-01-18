@@ -1,0 +1,9 @@
+DROP PROCEDURE IF EXISTS sp_totalSalary;
+
+DELIMITER $$
+CREATE PROCEDURE sp_totalSalary(OUT total DECIMAL(9,2))
+BEGIN
+    SELECT SUM(salary) INTO total FROM employee;
+END
+$$
+DELIMITER ;
