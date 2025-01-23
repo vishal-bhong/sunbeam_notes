@@ -1,0 +1,7 @@
+D:\Practice\Practice\operatorOverloading\bin\Debug\operatorOverloading.exe.config
+D:\Practice\Practice\operatorOverloading\bin\Debug\operatorOverloading.exe
+D:\Practice\Practice\operatorOverloading\bin\Debug\operatorOverloading.pdb
+D:\Practice\Practice\operatorOverloading\obj\Debug\operatorOverloading.csproj.AssemblyReference.cache
+D:\Practice\Practice\operatorOverloading\obj\Debug\operatorOverloading.csproj.CoreCompileInputs.cache
+D:\Practice\Practice\operatorOverloading\obj\Debug\operatorOverloading.exe
+D:\Practice\Practice\operatorOverloading\obj\Debug\operatorOverloading.pdb

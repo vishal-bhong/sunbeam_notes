@@ -1,0 +1,7 @@
+C:\Users\Admin\OneDrive\Desktop\CDAC\DOTNETDemos\CDACGroupOfProject\TestProject\bin\Debug\TestProject.exe.config
+C:\Users\Admin\OneDrive\Desktop\CDAC\DOTNETDemos\CDACGroupOfProject\TestProject\bin\Debug\TestProject.exe
+C:\Users\Admin\OneDrive\Desktop\CDAC\DOTNETDemos\CDACGroupOfProject\TestProject\bin\Debug\TestProject.pdb
+C:\Users\Admin\OneDrive\Desktop\CDAC\DOTNETDemos\CDACGroupOfProject\TestProject\obj\Debug\TestProject.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Desktop\CDAC\DOTNETDemos\CDACGroupOfProject\TestProject\obj\Debug\TestProject.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\CDAC\DOTNETDemos\CDACGroupOfProject\TestProject\obj\Debug\TestProject.exe
+C:\Users\Admin\OneDrive\Desktop\CDAC\DOTNETDemos\CDACGroupOfProject\TestProject\obj\Debug\TestProject.pdb

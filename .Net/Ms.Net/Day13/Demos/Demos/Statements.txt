@@ -1,0 +1,42 @@
+Pawan is software developer working with Infosys. Client Wolter Kluver have asked Pawan to develop and implement a report builder application.
+
+Application will help client create PDF reports initially. Type of reports can be added later.
+
+While creating a report Pawan will have to keep in mind writing a logic for parsing, revalidation in the order mentioned.
+
+Solution should be maintainable. 
+
+Hint: Use Single Responsibility Principle.
+
+
+..............................................................
+
+Create a Editor application which has basic functionalities like any other editor: copy, cut, paste etc etc.
+
+Editor also has spellcheck like functionality.
+Default functionality is available only for English Language.
+
+Users using the editor can ask for more languages support.
+Solution should be extensible to support any customized or regional languages based on users choice.
+
+Users should be able to write and extend editor for language 
+related functionalities based on need. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

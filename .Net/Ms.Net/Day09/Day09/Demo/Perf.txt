@@ -1,0 +1,18 @@
+Normal Call = 450 *50
+
+Via YourDelegate = 444*50
+Via Generic YourDelegate = 711*50
+Via Func Delegate = 456*50
+Via Func + Anonymous Method = 841*50
+Via Func + Lambada = 438
+
+Create,Compile - 437, Execution 1 *50
+
+Via Expression Tree = 1
+
+
+
+
+
+
+
