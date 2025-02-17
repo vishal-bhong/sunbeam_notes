@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <title>Register Here</title>
+  </head>
+  <body>
+    <center>
+      <h3>Registration Form</h3>
+      <hr />
+      <table>
+        <tr>
+          <td>
+            <span>Name</span>
+          </td>
+          <td>
+            <input type="text" name="MyName" id="MyName" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span>Address</span>
+          </td>
+          <td>
+            <textarea name="MyAddress" id="MyAddress"> </textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span>Country</span>
+          </td>
+          <td>
+            <select name="MyCountryCode" id="MyCountryCode">
+              <option value="91">India</option>
+              <option value="44">UK</option>
+              <option value="1">USA</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <span>Age</span>
+          </td>
+          <td>
+            <input name="MyAge" id="MyAge" type="number" min="18" max="60" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>EMail</span>
+          </td>
+          <td>
+            <input type="email" name="MyEMail" id="MyEMail" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Gender</span>
+          </td>
+          <td>
+            <input type="radio" value="1" name="gender" /> Female
+            <input type="radio" value="2" name="gender" /> Male
+            <input type="radio" value="3" name="gender" /> Other
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Hobbies</span>
+          </td>
+          <td>
+            <select multiple="multiple" name="MyHobbies" id="MyHobbies">
+              <option value="1">Reading</option>
+              <option value="2">Writing</option>
+              <option value="3">Trekking</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="checkbox"
+              name="MyAcceptanceOfConditions"
+              value="accept"
+              id="MyAcceptanceOfConditions"
+            />
+            I accept terms and conditions.
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="button"
+              name="btnSubmit"
+              id="btn"
+              value="Register"
+              onclick="Register()"
+            />
+          </td>
+        </tr>
+      </table>
+    </center>
+    <script>
+      function Register() {
+        //Get and Print Name of the Person
+        var refToMyName = document.getElementById("MyName");
+        console.log("Name is " + refToMyName.value);
+
+        //Get and Print Address of the Person
+        var refToMyAddress = document.getElementById("MyAddress");
+        console.log("Address is " + refToMyAddress.value);
+
+        //Get and Print Country Selected
+        var refToMyCountryCode = document.getElementById("MyCountryCode");
+        console.log("Country Code is " + refToMyCountryCode.value);
+
+        //Get and Print Age of the Person
+        var refToMyAge = document.getElementById("MyAge");
+        console.log("Age is " + refToMyAge.value);
+
+        //Get and Print EMail of the Person
+        var refToMyEMail = document.getElementById("MyEMail");
+        console.log("EMail is " + refToMyEMail.value);
+
+        //Get and Print GenderCode of the Person
+        var allGenders = document.getElementsByName("gender");
+        //debugger;
+        var genderFlag = false;
+
+        for (var i = 0; i < allGenders.length; i++) {
+          var genderRadioElement = allGenders[i];
+          //console.log(genderRadioElement.checked);
+          if (genderRadioElement.checked) {
+            genderFlag = true;
+            console.log("Gender Code selected is  " + genderRadioElement.value);
+            break;
+          }
+        }
+
+        if (genderFlag == false) {
+          console.log("No gender value selected!");
+        }
+
+        //Get the hobbies selected
+        var refToMyHobbies = document.getElementById("MyHobbies");
+        console.log("Hobbies code selected are :");
+
+        for (var i = 0; i < refToMyHobbies.options.length; i++) {
+          var option = refToMyHobbies.options[i];
+
+          if (option.selected) {
+            console.log(option.value);
+          }
+        }
+
+        // debugger;
+        var refToMyAcceptanceOfConditions = document.getElementById(
+          "MyAcceptanceOfConditions"
+        );
+        console.log(
+          "Are conditions accepted : " + refToMyAcceptanceOfConditions.checked
+        );
+      }
+    </script>
+  </body>
+</html>

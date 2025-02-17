@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo Canvas</title>
+  </head>
+  <body>
+    <canvas
+      style="height: 500px; width: 1000px; background-color: yellow"
+      id="myCanvas"
+    >
+    </canvas>
+    <br />
+    <input type="button" value="Click Me" onclick="Draw()" />
+
+    <script>
+      var x1 = 0;
+      var y1 = 0;
+      var x2 = 0;
+      var y2 = 0;
+      function Draw() {
+        setInterval(KeepDrawing, 100);
+      }
+      function KeepDrawing() {
+        debugger;
+        var refTomyCanvas = document.getElementById("myCanvas");
+
+        var context = refTomyCanvas.getContext("2d");
+        context.moveTo(x1, y1);
+        x2 = x1 + 3;
+        y2 = Math.floor(Math.random() * 100);
+        context.lineTo(x2, y2);
+        context.stroke();
+
+        x1 = x2;
+        y1 = y2;
+      }
+    </script>
+  </body>
+</html>

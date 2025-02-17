@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <table>
+        <tr>
+          <td>No</td>
+          <td>
+            <input type="number" id="txtNo" />
+          </td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" id="txtName" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button onclick="Add()">Add Record</button>
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <table border="1" style="width: 200px; text-align: center">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </center>
+    <script>
+      function Add() {
+        var refToTableBody = document.getElementById("tableBody");
+
+        var refToTxtNo = document.getElementById("txtNo");
+
+        var refToTxtName = document.getElementById("txtName");
+
+        var No = refToTxtNo.value;
+        var Name = refToTxtName.value;
+
+        var row = `<tr>
+                        <td>${No}</td>
+                        <td>${Name}</td>
+                    </tr>`;
+
+        refToTableBody.innerHTML = refToTableBody.innerHTML + row;
+      }
+    </script>
+  </body>
+</html>

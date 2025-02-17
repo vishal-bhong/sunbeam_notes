@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var person = { No: 1, Name: "Mahesh", Address: "Pune" };
+
+      var people = [
+        { No: 1, Name: "Mahesh", Address: "Pune1" },
+        { No: 2, Name: "Nilesh", Address: "Pune2" },
+        { No: 3, Name: "Suresh", Address: "Pune3" },
+        { No: 4, Name: "Ramesh", Address: "Pune4" },
+      ];
+
+      for (var i = 0; i < people.length; i++) {
+        var p = people[i];
+        console.log(p.No + p.Name + p.Address);
+      }
+
+      var employee = {
+        No: 1,
+        Name: "Mahesh",
+        Dept: { DeptNo: 100, DeptName: "IT" },
+        Hobbies: ["reading", "Writing", "Trekking"],
+      };
+      //   debugger;
+      console.log(employee);
+      var jsonAsString = JSON.stringify(employee);
+      console.log(jsonAsString);
+    </script>
+  </body>
+</html>

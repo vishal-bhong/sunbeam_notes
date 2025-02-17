@@ -1,0 +1,12 @@
+ .mydivstyle {
+     border: 2px dashed black;
+     background-color: gold;
+     color: black;
+     height: 160px;
+     width: 250px;
+     padding: 5px;
+ }
+
+ .myParaStyle {
+     text-align: justify;
+ }

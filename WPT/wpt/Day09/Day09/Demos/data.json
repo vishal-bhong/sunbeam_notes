@@ -1,0 +1,13 @@
+{
+    "No": 1,
+    "Name": "Mahesh",
+    "Dept": {
+        "DeptNo": 100,
+        "DeptName": "IT"
+    },
+    "Hobbies": [
+        "reading",
+        "Writing",
+        "Trekking"
+    ]
+}

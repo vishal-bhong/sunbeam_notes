@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Ad</title>
+  </head>
+  <body>
+    <a href="https://cdac.in/" id="myAdUrl" target="_blank">
+      <img id="myAd" src="cdac_Ad.jpg" style="height: 100px; width: 100%" />
+    </a>
+    <script>
+      setInterval(ChangeAd, 3000);
+
+      var flag = true;
+      function ChangeAd() {
+        var refToImage = document.getElementById("myAd");
+
+        var refTourl = document.getElementById("myAdUrl");
+
+        if (flag) {
+          refToImage.src = "sunbeam_Ad.png";
+          flag = false;
+          refTourl.href = "https://www.sunbeaminfo.in/";
+        } else {
+          refToImage.src = "cdac_Ad.jpg";
+          flag = true;
+          refTourl.href = "https://cdac.in/";
+        }
+      }
+    </script>
+  </body>
+</html>

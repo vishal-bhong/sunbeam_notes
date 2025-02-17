@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .A {
+        height: 50px;
+        width: 200px;
+        background-color: yellow;
+        text-align: center;
+        padding-top: 50px;
+        margin: 10px;
+        font-weight: bolder;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .B {
+        height: 50px;
+        width: 100px;
+        background-color: Red;
+        text-align: center;
+        padding-top: 50px;
+        margin: 10px;
+        font-weight: bolder;
+        font-family: "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+        <button id="btn">Click Me</button>
+      <div id="mydiv1" class="A" title="pune">DIV 1</div>
+      <div id="mydiv2" class="B" title="panji">DIV 2</div>
+      <div id="mydiv1" class="A" title="mumbai">DIV 3</div>
+      <div id="mydiv2" class="B" title="puri">DIV 4</div>
+      <section id="mysection1" class="A">Section 1</div>
+
+    </center>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        jquery("#btn").click(function(){
+            // $("#mydiv1").css("background-color", "blue");
+            // $("#mydiv1").css("height", "100px");
+
+            //  $("#mydiv1").css("background-color", "blue")
+            //              .css("height", "100px");
+
+            //  $("#mydiv1").css({"background-color" : "blue", 
+            //                    "height": "100px"})
+
+            //   $("div").css({"background-color" : "blue"})
+
+            //    $(".A").css({"background-color" : "blue"})
+
+            // $("div.A").css({"background-color" : "blue"})
+
+           // $("div[title='pune']").css({"background-color" : "blue"});
+
+            // $("div[title^='p']").css({"background-color" : "blue"});
+
+            //  $("div[title$='i']").css({"background-color" : "blue"});
+
+            //   $("div[title*='n']").css({"background-color" : "blue"});
+
+            //  $("div[title^='p']").filter("div[title$='i']") .css({"background-color" : "blue"});
+        })
+
+
+    </script>
+  </body>
+</html>

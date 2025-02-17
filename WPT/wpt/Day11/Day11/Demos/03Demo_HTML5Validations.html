@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="somecodeonserverside.jsp" method="get">
+      <center>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>
+              <input
+                type="text"
+                name="userName"
+                required="required"
+                placeholder="Enter Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>
+              <input
+                type="number"
+                min="18"
+                max="60"
+                name="age"
+                required="required"
+                placeholder="Age Pls"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Fav Color</td>
+            <td>
+              <input type="color" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Click Me" />
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

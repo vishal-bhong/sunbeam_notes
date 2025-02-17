@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="myDiv"
+      style="
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        position: absolute;
+        left: 0px;
+      "
+    ></div>
+
+    <br />
+    <br /><br /><br /><br />
+    <input type="button" value="Move" onclick="Move()" />
+    <input type="button" value="Stop" onclick="Stop()" />
+    <script>
+      var counter = 0;
+      var arr = new Array();
+
+      function Move() {
+        var queNo = setInterval(KeepMoving, 100);
+        arr.push(queNo);
+        console.log("Queue with No " + queNo + " is created!");
+        console.log("Current Array Of Queue has : ");
+        console.log(arr);
+      }
+
+      function KeepMoving() {
+        counter = counter + 1;
+        var refToMyDiv = document.getElementById("myDiv");
+
+        refToMyDiv.style.left = counter + "px";
+      }
+
+      function Stop() {
+        while (arr.length > 0) {
+          var queNoToRemove = arr.pop();
+          console.log("Queue No " + queNoToRemove + " is getting cleared!");
+
+          clearInterval(queNoToRemove);
+        }
+      }
+    </script>
+  </body>
+</html>

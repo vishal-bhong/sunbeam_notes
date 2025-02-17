@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Page 1</title>
+  </head>
+  <body>
+    <h1>PAGE 1</h1>
+    <hr />
+    Name: <input type="text" id="txtName" /> <br />
+    City: <input type="text" id="txtCity" /> <br />
+    <button onclick="SaveNavigate()">Click Me</button>
+
+    <script>
+      function SaveNavigate() {
+        debugger;
+        var refTotxtName = document.getElementById("txtName");
+        var refTotxtCity = document.getElementById("txtCity");
+
+        window.localStorage.setItem("myname", refTotxtName.value);
+
+        window.localStorage.setItem("mycity", refTotxtCity.value);
+
+        window.location.href = "Page2.html";
+      }
+    </script>
+  </body>
+</html>

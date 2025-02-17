@@ -1,0 +1,15 @@
+https://www.w3schools.com/
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+https://javascript.info/
+
+https://javascriptissexy.com/
+
+https://www.json.org/json-en.html
+
+https://www.w3.org/
+
+https://www.youtube.com/live/S5RW6e4agcM?feature=shared

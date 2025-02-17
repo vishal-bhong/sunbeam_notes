@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>Test Functional Programming</title>
+  </head>
+  <body>
+    <script>
+      ////----------------------------------------------
+      ////1. Writing Simple Function
+      ////----------------------------------------------
+      //   function SayHi(name) {
+      //     console.log("hi " + name);
+      //   }
+
+      //   SayHi("Mahesh");
+
+      ////----------------------------------------------
+      ////2. A variable can hold a function
+      ////----------------------------------------------
+      //   var SayHi = function (name) {
+      //     console.log("hi " + name);
+      //   };
+      //   debugger;
+      //-- Based on discussions earlier; varaibles can hold data of 5 types: number, string, bool, object and indefined.
+      //so here SayHi holds Object:
+
+      //Proof of Concept:
+      //1. Variable can hold 5 type of data
+      //2. use typeof(SayHi) to find type
+      //   i.e. function
+      //3. use typeof(SayHi).__proto__ to find base
+      //   i.e. function or NativeFunction
+      //4. use typeof(SayHi).__proto__.__proto__ to find super base which is object
+
+      //Call SayHi :
+      //   SayHi("Mahesh");
+
+      ////----------------------------------------------
+      ////3. Hoisting
+      ////----------------------------------------------
+
+      //   console.log(x);
+      //   x = 10;
+      //   console.log(x);
+      //   var x = 20;
+      //   console.log(x);
+
+      //   var x = undefined;
+      //   console.log(x);
+      //   x = 10;
+      //   console.log(x);
+      //   x = 20;
+      //   console.log(x);
+
+      //SayHi();
+
+      //   function SayHi() {
+      //     console.log("Hi");
+      //   }
+
+      //   var SayHi = function () {
+      //     console.log("Hi");
+      //   };
+
+      //   SayHi();
+
+      ////----------------------------------------------
+      ////4. Function can be passed as parameter
+      ////----------------------------------------------
+
+      //   function Check() {
+      //     if (10 > 4) {
+      //       F1();
+      //     } else {
+      //       F2();
+      //     }
+      //   }
+
+      function Check(onsuccess, onfailure) {
+        if (10 > 4) {
+          onsuccess();
+        } else {
+          onfailure();
+        }
+      }
+
+      var F1 = function () {
+        console.log("Wow!");
+      };
+
+      var F2 = function () {
+        console.log("miracle!!");
+      };
+
+      debugger;
+
+      Check(F1, F2);
+      //   Check(
+      //     function () {
+      //       console.log("Wow!");
+      //     },
+      //     function () {
+      //       console.log("miracle!!");
+      //     }
+      //   );
+
+      function X() {
+        console.log("Great!");
+      }
+      function Y() {
+        console.log("Not so great!");
+      }
+      Check(X, Y);
+    </script>
+  </body>
+</html>

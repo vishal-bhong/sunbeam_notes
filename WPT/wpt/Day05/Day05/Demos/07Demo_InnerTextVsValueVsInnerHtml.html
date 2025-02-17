@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <title id="myTitle">Document</title>
+  </head>
+  <body>
+    <center>
+      <div
+        id="myDiv1"
+        style="height: 100px; width: 100px; background-color: skyblue"
+      ></div>
+      <br />
+      <div
+        id="myDiv2"
+        style="height: 100px; width: 100px; background-color: yellow"
+      ></div>
+
+      <input type="button" value="Click Me" onclick="DoSomething()" />
+    </center>
+    <script>
+      function DoSomething() {
+        var refToMyDiv1 = document.getElementById("myDiv1");
+        refToMyDiv1.innerText = "Hello";
+
+        var refToMyDiv2 = document.getElementById("myDiv2");
+        // refToMyDiv2.innerText = `<br />
+        // <img src="car.png" height="70px" width="70px" />`;
+
+        refToMyDiv2.innerHTML = `<br />
+        <img src="car.png" height="70px" width="70px" />`;
+
+        var refToTitle = document.getElementById("myTitle");
+
+        // refToTitle.innerText = "CDAC Demo";
+
+        // refToTitle.innerText = refToTitle.innerText + " CDAC Demo";
+      }
+    </script>
+  </body>
+</html>

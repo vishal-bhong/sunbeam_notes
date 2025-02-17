@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Demo DOM</title>
+  </head>
+  <body>
+    X: <input type="number" id="txtNoX" /> <br />
+    Y: <input type="number" id="txtNoY" /> <br />
+    Result: <input type="text" id="txtResult" /> <br />
+    <input type="button" onclick="Add()" value="Click Me" />
+
+    <script>
+      function Add() {
+        debugger;
+        var refX = document.getElementById("txtNoX");
+        var refY = document.getElementById("txtNoY");
+        var refResult = document.getElementById("txtResult");
+
+        var xValue = refX.value;
+        var yValue = refY.value;
+
+        var x = parseInt(xValue);
+        var y = parseInt(yValue);
+
+        var result = x + y;
+        refResult.value = result;
+      }
+    </script>
+  </body>
+</html>

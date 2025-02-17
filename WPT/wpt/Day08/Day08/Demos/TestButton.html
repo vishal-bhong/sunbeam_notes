@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button onclick="DoSomething()">
+      <input type="text" id="txt1" />
+    </button> -->
+
+    <button onclick="DoSomething()">
+      <video
+        height="50px"
+        width="100px"
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        id="myVideo"
+      ></video>
+    </button>
+
+    <script>
+      function DoSomething() {
+        // var refTotxt1 = document.getElementById("txt1");
+        // alert("Hi " + refTotxt1.value);
+
+        var refToMyVideo = document.getElementById("myVideo");
+        refToMyVideo.play();
+      }
+    </script>
+  </body>
+</html>

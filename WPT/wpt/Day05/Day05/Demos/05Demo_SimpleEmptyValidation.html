@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <br /><br /><br />
+    <center>
+      <table style="width: 400px">
+        <tr>
+          <td style="width: 50px">Name</td>
+          <td style="width: 100px">
+            <input type="text" id="txtName" />
+          </td>
+          <td style="width: 100%">
+            <div id="divForErrorRelatedToName" style="color: red"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width: 50px">Address</td>
+          <td style="width: 100px">
+            <input type="text" id="txtAddress" />
+          </td>
+          <td style="width: 100%">
+            <div id="divForErrorRelatedToAddress" style="color: red"></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input type="button" value="Click Me" onclick="Register()" />
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function Register() {
+        CheckEmpty("txtName", "divForErrorRelatedToName", "Name is required.");
+
+        CheckEmpty(
+          "txtAddress",
+          "divForErrorRelatedToAddress",
+          "Address is required."
+        );
+      }
+
+      function CheckEmpty(id, errorDivId, errorMessage) {
+        var refToTextBox = document.getElementById(id);
+
+        var refErrorDiv = document.getElementById(errorDivId);
+
+        if (refToTextBox.value == "") {
+          refErrorDiv.innerText = errorMessage;
+        } else {
+          console.log(refToTextBox.value);
+          refErrorDiv.innerText = "";
+        }
+      }
+    </script>
+  </body>
+</html>

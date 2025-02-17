@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //----------------------------------------
+      //ECMA 6 Features
+      //----------------------------------------
+
+      //----------------------------------------
+      //-----1. let & const
+      //----------------------------------------
+
+      //   var counter = 10;
+      //   console.log(counter);
+
+      //   function DoSomething() {
+      //     let counter = 100;
+      //     counter = counter + 1;
+      //     console.log(counter);
+      //   }
+
+      //   DoSomething();
+      //   console.log(counter);
+
+      //   const v = 100;
+      //   var sum = v + 20;
+      //   console.log(sum);
+
+      //   const sayHi = function () {
+      //     console.log("hi");
+      //   };
+
+      //   //   sayHi = 100;
+
+      //   sayHi();
+
+      //----------------------------------------
+      //-----2. arrow function
+      //----------------------------------------
+
+      //   function SayHi(name) {
+      //     console.log("Hi " + name);
+      //   }
+
+      //   var SayHi = function (name) {
+      //     console.log("Hi " + name);
+      //   };
+
+      //   var SayHi = (name) => {
+      //     console.log("Hi " + name);
+      //   };
+
+      //   SayHi("mahesh");
+      //----------------------------------------
+      //-----3. new array function
+      //----------------------------------------
+
+      // var names = new Array();
+      // names.push("duryodhan");
+      // names.push("drishtyadyumna");
+      // names.push("karna");
+
+      // mymap(names, (name) => {
+      //   console.log("hi  " + name);
+      // });
+
+      // function mymap(arr, fn) {
+      //   for (var i = 0; i < arr.length; i++) {
+      //     fn(arr[i]);
+      //   }
+      // }
+
+      // names.map(Print);
+
+      // function Print(name)
+      // {
+      //       console.log("hi  " + name);
+      // }
+
+      // names.map((name) => {
+      //   console.log("hi  " + name);
+      // });
+
+      //----------------------------------------
+      //-----4. template literal syntax
+      //----------------------------------------
+
+      // function Print(no, name, address) {
+      //   var message = "Hi " + name + " from " + address + " with No as  " + no;
+      //   console.log(message);
+      // }
+
+      // function Print(no, name, address) {
+      //   var message = `Hi ${name} from ${address} with No as ${no}`;
+      //   console.log(message);
+      // }
+
+      // Print(10, " sachin", "mumbai");
+
+      //----------------------------------------
+      //-----5. spread operator i.e. tripple DOT
+      //----------------------------------------
+
+      //var p1 = { No: 1, Name: "Akash", Address: "Pune" };
+
+      //console.log(p1);
+
+      //var p2 = p1; //Here we are just copying reference
+
+      // var p2 = { ...p1 }; //Here we are deep copying p1
+      // p2.Name = "Chetan";
+      // console.log(p1);
+      // console.log(p2);
+
+      //----------------------------------------
+      //-----6. class key word syntax
+      //----------------------------------------
+
+      class Person {
+        constructor(no, name, address) {
+          this.No = no;
+          this.Name = name;
+          this.Address = address;
+        }
+        Print() {
+          console.log(this.No + this.Name + this.Address);
+        }
+      }
+
+      var p1 = new Person(10, "sachin", "mumbai");
+      p1.Print();
+    </script>
+  </body>
+</html>

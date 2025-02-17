@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <button onclick="GetData()">Get Data</button>
+      <hr />
+      <table border="1" id="myTable" style="width: 500px; text-align: center">
+        <tr>
+          <td>Name</td>
+          <td>Dept Name</td>
+          <td>Hobbies</td>
+        </tr>
+      </table>
+    </center>
+    <script>
+      function GetData() {
+        var helper = new XMLHttpRequest();
+        helper.onreadystatechange = function () {
+          if (helper.readyState == 4 && helper.status == 200) {
+            var employees = JSON.parse(helper.responseText);
+
+            var refToTable = document.getElementById("myTable");
+
+            employees.map((emp) => {
+              refToTable.innerHTML =
+                refToTable.innerHTML +
+                `<tr>
+              <td>${emp.Name}</td>
+              <td>${emp.Dept.DeptName}</td>
+              <td>${emp.Hobbies} </td>
+            </tr>`;
+            });
+          }
+        };
+        helper.open("GET", "http://127.0.0.1:5500/employees.json");
+        helper.send();
+      }
+    </script>
+  </body>
+</html>

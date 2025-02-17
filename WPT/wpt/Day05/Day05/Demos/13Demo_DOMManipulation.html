@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <img
+      src="car.png"
+      style="height: 100px; width: 100px; position: absolute"
+      id="myCar"
+    />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <center>
+      <input type="button" value="Start" onclick="Start()" />
+
+      <input type="button" value="Stop" onclick="Stop()" />
+    </center>
+    <script>
+      var counter = 0;
+
+      function KeepCounting() {
+        counter = counter + 10;
+
+        var refTomyCar = document.getElementById("myCar");
+        refTomyCar.style.left = counter + "px";
+      }
+      var no;
+
+      function Start() {
+        no = window.setInterval(KeepCounting, 1000);
+        console.log("Returned by setInterval = " + no);
+      }
+
+      function Stop() {
+        console.log("Queue cleared is " + no);
+        window.clearInterval(no);
+      }
+    </script>
+  </body>
+</html>

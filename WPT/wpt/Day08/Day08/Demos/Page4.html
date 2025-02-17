@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>PAGE 4</h1>
+    <hr />
+    <h1 id="message"></h1>
+    <script>
+      function OnLoad() {
+        var refToH1 = document.getElementById("message");
+
+        var name = window.sessionStorage.getItem("myname");
+        var city = window.sessionStorage.getItem("mycity");
+
+        refToH1.innerText = "Hi " + name + " from " + city;
+      }
+
+      OnLoad();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <button onclick="GetData()">Get Data</button>
+      <hr />
+      <table border="1" id="myTable" style="width: 500px; text-align: center">
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>EMail</td>
+          <td>Photo</td>
+        </tr>
+      </table>
+    </center>
+    <script>
+      function GetData() {
+        var helper = new XMLHttpRequest();
+        helper.onreadystatechange = function () {
+          if (helper.readyState == 4 && helper.status == 200) {
+            var result = JSON.parse(helper.responseText);
+            var users = result.data;
+            var refTomyTable = document.getElementById("myTable");
+
+            users.map((user) => {
+              var row = `<tr>
+                            <td>${user.id}</td>
+                            <td>${user.first_name} ${user.last_name}</td>
+                            <td>${user.email}</td>
+                            <td>
+                                <img
+                                style="height: 100px; width: 100px"
+                                src="${user.avatar}"
+                                />
+                            </td>
+                            </tr>`;
+
+              refTomyTable.innerHTML = refTomyTable.innerHTML + row;
+            });
+          }
+        };
+        helper.open("GET", "https://reqres.in/api/users");
+        helper.send();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Demo XHR</title>
+  </head>
+  <body>
+    <center>
+      <button onclick="GetData()">Get Data From ReqRes.In</button>
+      <hr />
+      <div id="container"></div>
+    </center>
+    <script>
+      function GetData() {
+        var obj = new XMLHttpRequest();
+
+        obj.onreadystatechange = () => {
+          if (obj.readyState == 4 && obj.status == 200) {
+            var result = JSON.parse(obj.responseText);
+
+            var refTocontainer = document.getElementById("container");
+
+            for (var i = 0; i < result.data.length; i++) {
+              var record = result.data[i];
+              refTocontainer.innerHTML =
+                refTocontainer.innerHTML + `<h1>${record.first_name}</h1>`;
+            }
+          }
+        };
+        // obj.setRequestHeader("licenseKey", "value");
+        obj.open("GET", "https://reqres.in/api/users");
+        obj.send();
+      }
+    </script>
+  </body>
+</html>

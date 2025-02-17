@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var counter = 0;
+
+      function KeepCounting() {
+        counter = counter + 1;
+        console.log(counter);
+      }
+
+      //   window.setTimeout(KeepCounting, 5000);
+
+      window.setInterval(KeepCounting, 1000);
+    </script>
+  </body>
+</html>

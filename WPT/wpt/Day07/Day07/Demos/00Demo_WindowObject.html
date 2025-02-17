@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Demo Window Object</title>
+  </head>
+  <body>
+    <input type="button" value="Click Me" onclick="Disturb()" />
+    <script>
+      function Disturb() {
+        alert("I am important!");
+      }
+      function Print() {
+        // debugger;
+        console.log("Something");
+      }
+
+      //debugger;
+      console.log("Hi");
+      window.setTimeout(Print, 5000);
+      console.log("Bye");
+    </script>
+  </body>
+</html>

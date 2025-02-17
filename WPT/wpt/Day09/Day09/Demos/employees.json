@@ -1,0 +1,37 @@
+[
+    {
+        "No": 1,
+        "Name": "Mahesh",
+        "Dept": {
+            "DeptNo": 100,
+            "DeptName": "IT"
+        },
+        "Hobbies": [
+            "reading",
+            "Writing",
+            "Trekking"
+        ]
+    },
+    {
+        "No": 2,
+        "Name": "Nilesh",
+        "Dept": {
+            "DeptNo": 200,
+            "DeptName": "Admin"
+        },
+        "Hobbies": [
+            "Cricket"
+        ]
+    },
+    {
+        "No": 3,
+        "Name": "Rohan",
+        "Dept": {
+            "DeptNo": 100,
+            "DeptName": "Java"
+        },
+        "Hobbies": [
+            "reading"
+        ]
+    }
+]

@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>Register Here</title>
+  </head>
+  <body>
+    <center>
+      <h3>Registration Form</h3>
+      <hr />
+      <form action="somecodefileonserver.jsp" method="POST">
+        <table>
+          <tr>
+            <td>
+              <span>Name</span>
+            </td>
+            <td>
+              <input type="text" name="MyName" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Address</span>
+            </td>
+            <td>
+              <textarea name="MyAddress"> </textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Country</span>
+            </td>
+            <td>
+              <select name="MyCountryCode">
+                <option value="91">India</option>
+                <option value="44">UK</option>
+                <option value="1">USA</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>Age</span>
+            </td>
+            <td>
+              <input name="MyAge" type="number" min="18" max="60" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>EMail</span>
+            </td>
+            <td>
+              <input type="email" name="MyEMail" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Gender</span>
+            </td>
+            <td>
+              <input type="radio" value="1" name="gender" /> Female
+              <input type="radio" value="2" name="gender" /> Male
+              <input type="radio" value="3" name="gender" /> Other
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Hobbies</span>
+            </td>
+            <td>
+              <select multiple="multiple" name="MyHobbies">
+                <option value="1">Reading</option>
+                <option value="2">Writing</option>
+                <option value="3">Trekking</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                type="checkbox"
+                name="MyAcceptanceOfConditions"
+                value="accept"
+              />
+              I accept terms and conditions.
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" name="btnSubmit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

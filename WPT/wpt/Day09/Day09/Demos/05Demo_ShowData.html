@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <button onclick="GetData()">Get Data</button>
+      <hr />
+      <table border="1" id="myTable" style="width: 500px; text-align: center">
+        <tr>
+          <td>Name</td>
+          <td>Dept Name</td>
+          <td>Hobbies</td>
+        </tr>
+      </table>
+    </center>
+    <script>
+      function GetData() {
+        var emp = null;
+
+        // debugger;
+
+        var helper = new XMLHttpRequest();
+        //helper.readyState = 0
+
+        helper.onreadystatechange = function () {
+          // debugger;
+          //console.log("Readystate is " + helper.readyState);
+
+          if (helper.readyState == 4 && helper.status == 200) {
+            debugger;
+            var dataFromServerInString = helper.responseText;
+
+            emp = JSON.parse(dataFromServerInString);
+
+            var refToTable = document.getElementById("myTable");
+
+            refToTable.innerHTML =
+              refToTable.innerHTML +
+              `<tr>
+              <td>${emp.Name}</td>
+              <td>${emp.Dept.DeptName}</td>
+              <td>${emp.Hobbies[0]}, ${emp.Hobbies[1]}, ${emp.Hobbies[2]} </td>
+            </tr>`;
+          }
+        };
+
+        helper.open("GET", "http://127.0.0.1:5500/data.json");
+        //open means http packet is prepared
+        // helper.readyState = 1
+
+        helper.send();
+        //send means packet is sent!
+        // helper.readyState = 2
+
+        // after this helper is waiting for reply!
+        // so helper.readyState = 3
+        // it means .waiting state
+        // if  helper.readyState becomes 4; it means
+        // reply received
+      }
+    </script>
+  </body>
+</html>

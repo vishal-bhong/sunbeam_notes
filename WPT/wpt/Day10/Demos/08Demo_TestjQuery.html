@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <hr />
+      <button id="btn">Click me</button>
+      <table
+        id="myTable"
+        border="1"
+        style="width: 300px; text-align: center"
+      ></table>
+    </center>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $("#btn").click(function () {
+        debugger;
+        $.ajax({
+          url: "https://reqres.in/api/users",
+          method: "GET",
+          contentType: "application/json",
+          // headers : {key : value}
+          success: function (result) {
+            debugger;
+            for (var index = 0; index < result.data.length; index++) {
+              let user = result.data[index];
+
+              var row = `<tr>
+                          <td>${user.id}</td>
+                          <td>${user.first_name}</td>
+                          <td>${user.last_name}</td>
+                        </tr>`;
+
+              $("#myTable").append(row);
+            }
+          },
+          error: function () {
+            alert("something wrong!");
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

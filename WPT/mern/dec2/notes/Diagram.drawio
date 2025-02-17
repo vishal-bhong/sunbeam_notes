@@ -1,0 +1,58 @@
+<mxfile host="Electron" modified="2024-12-03T02:55:00.747Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="TkJAIPyBGNJUma9S4AL8" version="21.4.0" type="device">
+  <diagram name="Page-1" id="PYet11bBr3XOTEA8ZH-B">
+    <mxGraphModel dx="654" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.059;entryY=0.47;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="dSvZwnzjEVsOW4q8FD35-1" target="dSvZwnzjEVsOW4q8FD35-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-1" value="client" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="210" y="238" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dSvZwnzjEVsOW4q8FD35-2" target="dSvZwnzjEVsOW4q8FD35-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-2" value="server" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="540" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="dSvZwnzjEVsOW4q8FD35-3" target="dSvZwnzjEVsOW4q8FD35-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-3" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dSvZwnzjEVsOW4q8FD35-6" target="dSvZwnzjEVsOW4q8FD35-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dSvZwnzjEVsOW4q8FD35-6" target="dSvZwnzjEVsOW4q8FD35-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-6" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5.137931034482733;" parent="1" vertex="1">
+          <mxGeometry x="720" y="230" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-8" value="User" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="827" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-9" value="TodoItem" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="827" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-12" value="mydb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="720" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-13" value="&lt;b&gt;GET&lt;/b&gt;: get something from server&lt;br&gt;&lt;b&gt;POST&lt;/b&gt;: send something to the server&lt;br&gt;&lt;b&gt;PUT&lt;/b&gt;: update something on server&lt;br&gt;&lt;b&gt;DELETE&lt;/b&gt;: delete something on serve" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=7;" parent="1" vertex="1">
+          <mxGeometry x="155" y="110" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-14" value="&lt;b&gt;GET&lt;/b&gt;: select * from ...&lt;br&gt;&lt;b&gt;POST&lt;/b&gt;: insert into ..&lt;br&gt;&lt;b&gt;PUT&lt;/b&gt;: update ....&lt;br&gt;&lt;b&gt;DELETE&lt;/b&gt;: delete from ...." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;spacingLeft=7;" parent="1" vertex="1">
+          <mxGeometry x="512.5" y="110" width="175" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dSvZwnzjEVsOW4q8FD35-15" value="GET /" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="552.5" y="200" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dmfj1FvSdlNDmVJysOQT-1" value="4000" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="573" y="285" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      Latitude <input type="text" id="txtLat" /> <br />
+      Longitude <input type="text" id="txtLon" /> <br />
+      <button onclick="GetLocation()">Find Lat | Long</button>
+      <button onclick="SeeMap()">See Map</button>
+    </center>
+    <script>
+      function GetLocation() {
+        debugger;
+        navigator.geolocation.getCurrentPosition(OnSuccess, OnError);
+      }
+      var refToTxtLat = document.getElementById("txtLat");
+
+      var refTotxtLong = document.getElementById("txtLon");
+
+      function OnSuccess(result) {
+        refToTxtLat.value = result.coords.latitude;
+        refTotxtLong.value = result.coords.longitude;
+        debugger;
+      }
+
+      function OnError(error) {
+        debugger;
+        alert("something is wrong!");
+      }
+
+      function SeeMap() {
+        window.location.href =
+          "https://www.latlong.net/c/?lat=" +
+          refToTxtLat.value +
+          "&long=" +
+          refTotxtLong.value;
+      }
+    </script>
+  </body>
+</html>

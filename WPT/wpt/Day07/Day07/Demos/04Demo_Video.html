@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Demo Video</title>
+  </head>
+  <body>
+    <input type="button" value="Click Me" onclick="Play()" />
+    <br />
+    <video
+      src="https://www.w3schools.com/html/mov_bbb.mp4"
+      style="height: 200px; width: 200px"
+      id="myVideo"
+    ></video>
+
+    <script>
+      function Play() {
+        var refTomyVideo = document.getElementById("myVideo");
+        refTomyVideo.play();
+      }
+    </script>
+  </body>
+</html>

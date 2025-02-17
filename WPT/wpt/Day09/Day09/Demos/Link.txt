@@ -1,0 +1,9 @@
+
+https://reqres.in/api/users
+
+
+https://www.themealdb.com/api/json/v1/1/search.php?s=pizza
+
+
+https://www.googleapis.com/books/v1/volumes?q=java
+

@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Test Functional Programming</title>
+  </head>
+  <body>
+    <script>
+      ////----------------------------------------------
+      ////5. Function can return a function
+      ////----------------------------------------------
+
+      // function GetMeSomething(flag) {
+      //   var fn = null;
+      //   if (flag == true) {
+      //     fn = function () {
+      //       console.log("Hi");
+      //     };
+      //   } else {
+      //     fn = function () {
+      //       console.log("Bye");
+      //     };
+      //   }
+
+      //   return fn;
+      // }
+
+      // var somefunction = GetMeSomething(false);
+      // somefunction();
+
+      ////----------------------------------------------
+      ////6. Literal Syntax of Creating Objects
+      ////----------------------------------------------
+
+      //debugger;
+      var person = {
+        No: 1,
+        Name: "Mahesh",
+        Address: "Pune",
+        Print: function () {
+          debugger;
+          console.log(this.No + this.Name + this.Address);
+        },
+      };
+      // console.log(person.Name);
+      // person.Name = "Nilesh";
+      // console.log(person.Name);
+      // console.log(person);
+      //debugger;
+
+      // delete person.Name;
+      // person.EMail = "m@a.com";
+
+      // person.Print();
+
+      // // var employee = {};
+      // // employee.__proto__ = person;
+      // // console.log(employee.Name);
+
+      var employee = {
+        Dept: "IT",
+        Print: function () {
+          debugger;
+          console.log(this.No + this.Name + this.Address + this.Dept);
+        },
+      };
+      employee.__proto__ = person;
+      //console.log(employee.Name);
+
+      employee.Print();
+    </script>
+  </body>
+</html>

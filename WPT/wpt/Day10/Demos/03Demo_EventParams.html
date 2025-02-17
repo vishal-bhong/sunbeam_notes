@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    &lt;Mahesh &gt; is not a tag
+    <div
+      oncontextmenu="StopContextMenu(event)"
+      style="background-color: aqua; height: 1000px; width: 1000px"
+    >
+      <center>
+        <input type="text" id="txtBox" onkeydown="HandleKeyPress(event)" />
+        <input type="button" value="1" onclick="F1(event)" />
+        <input type="button" value="2" onclick="F1(event)" />
+        <input type="button" value="3" onclick="F1(event)" />
+      </center>
+    </div>
+    <script>
+      function HandleKeyPress(e) {
+        debugger;
+      }
+      function StopContextMenu(e) {
+        debugger;
+        e.preventDefault();
+        alert("Right click is not allowed!");
+      }
+      function F1(args) {
+        var refTotxtBox = document.getElementById("txtBox");
+        refTotxtBox.value = args.target.value;
+      }
+    </script>
+  </body>
+</html>

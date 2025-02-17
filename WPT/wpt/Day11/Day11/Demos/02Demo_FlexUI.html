@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="container"
+      style="
+        border: 5px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      "
+    ></div>
+
+    <script>
+      var refTocontainer = document.getElementById("container");
+
+      var helper = new XMLHttpRequest();
+      helper.onreadystatechange = function () {
+        if (helper.readyState == 4 && helper.status == 200) {
+          var result = JSON.parse(helper.responseText);
+          result.data.map((user) => {
+            var content = ` <div
+                              style="
+                                height: 200px;
+                                width: 200px;
+                                margin: 10px;
+                                border: 5px solid black;
+                                text-align: center;
+                              "
+                            >
+                              <img src="${user.avatar}" height="100px" width:
+                              "100px" />
+                              <h1>${user.first_name} ${user.last_name}</h1>
+                            </div>`;
+            refTocontainer.innerHTML = refTocontainer.innerHTML + content;
+          });
+        }
+      };
+      helper.open("GET", "https://reqres.in/api/users");
+      helper.send();
+    </script>
+  </body>
+</html>
