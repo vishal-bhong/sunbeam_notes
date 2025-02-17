@@ -1,0 +1,106 @@
+cd dac
+ls
+which gcc
+echo $SHELL
+date
+man date
+date
+cal
+cal -m 11
+cal -y
+cal -y 2020
+man cal
+echo $PATH
+echo $HOME
+echo $USER
+env
+pwd
+mkdir demo
+ls
+mkdir dir1 dir2 dir3 
+ls
+mkdir -p d1/d2/d3/d4
+ls
+ls d1
+ls d1/d2
+ls d1/d2/d3
+ls d1/d2/d3/d4
+clear
+ls -R d1
+ls
+rmdir dir3
+ls
+pwd
+cd demo
+pwd
+cd
+pwd
+cd -
+pwd
+cd ..
+pwd
+cd .
+pwd
+cd ~
+pwd
+cd aug2024/dac/
+ls
+touch file.txt
+ls
+touch f1.txt f2.txt f3.txt
+ls
+ls -s
+ls -l
+ls
+cat > demo.txt
+ls
+cat demo.txt
+cat > demo.txt
+cat demo.txt
+cat >> demo.txt
+cat demo.txt
+ls
+rm file.txt 
+ls
+cp demo.txt copy.txt
+ls
+cat copy.txt 
+cp demo.txt dir2
+ls dir2
+cat dir2/demo.txt 
+ls 
+cp dir2 copy
+cp -r dir2 copy
+ls
+ls copy
+ls
+mv f1.txt d1
+ls
+ls d1
+mv f2.txt mv.txt
+ls
+mv demo dir1
+ls
+rmdir dir2
+rm -r dir2
+ls
+ls -l -s 
+alias l1="ls -l -s"
+l1
+unalias l1
+l1
+cat > numbers.txt
+cat numbers.txt
+cat -n numbers.txt
+rev numbers.txt 
+tac numbers.txt 
+sort numbers.txt 
+sort -n numbers.txt 
+cat numbers.txt 
+uniq numbers.txt 
+cat numbers.txt 
+head numbers.txt 
+tail numbers.txt 
+head -7 numbers.txt 
+tail -4 numbers.txt 
+history

@@ -1,0 +1,143 @@
+whoami
+who
+w
+who -w
+tty
+cat numbers.txt 
+cat > numbers.txt 
+cat numbers.txt 
+uniq numbers.txt 
+sort numbers.txt 
+sort numbers.txt > sorted.txt
+cat sorted.txt 
+uniq sorted.txt 
+ls
+ls > lsout.txt
+cat lsout.txt 
+sort numbers.txt | uniq
+wc demo.txt 
+wc < demo.txt 
+bc
+cat input.txt
+cat > input.txt
+cat input.txt
+bc < input.txt 
+bc < input.txt > output.txt
+cat output.txt 
+ls -W
+ls -W 2> error.txt
+cat error.txt 
+cat
+cat > output.txt
+cat output.txt 
+cat > output.txt < input.txt 
+cat input.txt 
+cat output.txt 
+echo "Hello DAC"
+echo "Hello DAC" | tr " " "#"
+echo "Hello      DAC" | tr " " "#"
+echo "Hello      DAC"
+echo "Hello      DAC" | tr -s " "
+echo "Hello DAC" | tr "a-z" "A-Z"
+echo "Hello DAC" | tr "A-Z" "a-z"
+echo "Hello DAC" | tr "A-Z|a-z" "a-z|A-Z"
+echo "DAC DESD DMC DBDA DITISS"
+echo "DAC DESD DMC DBDA DITISS" | cut -d " " -f1
+echo "DAC DESD DMC DBDA DITISS" | cut -d " " -f3
+echo "DAC DESD DMC DBDA DITISS" | cut -d " " -f2,3
+echo "DAC DESD DMC DBDA DITISS" | cut -d " " -f2-4
+echo "DAC DESD DMC DBDA DITISS" | cut -d " " -f6
+cat input.txt 
+cat input.txt | cut -d " " -f1
+cat input.txt | cut -d " " -f2
+cat input.txt | cut -d " " -f3
+cat >> input.txt 
+cat input.txt 
+cat input.txt | cut -d " " -f1
+cat numbers.txt -n
+cat numbers.txt -n | head -6
+cat numbers.txt -n | head -6 | tail -4
+man head
+cat numbers.txt 
+head -4 numbers.txt 
+head -n 4 numbers.txt 
+head -n -4 numbers.txt 
+man head 
+head -n 3 numbers.txt 
+head -n -3 numbers.txt 
+man tail 
+tail -3 numbers.txt 
+tail -n 3 numbers.txt 
+tail -n +3 numbers.txt 
+head -6 numbers.txt | tail -n +3
+ls
+pwd
+ls pwd
+ls && pwd
+ls -W && pwd
+ls || pwd
+ls -W || pwd
+ls ; pwd
+stat demo.txt 
+man stat
+stat demo.txt 
+stat -c "%n %F"demo.txt 
+stat -c "%n %F" demo.txt 
+stat -c "%F" demo.txt 
+stat -c "name = %n type = %F" demo.txt 
+find . -name demo.txt
+find .. -name demo.txt
+find ~ -name demo.txt
+find /home/sunbeam -name demo.txt
+find . -type f
+find . -type d
+cat > taste.txt
+cat taste.txt
+grep "cake" taste.txt 
+grep "good" taste.txt 
+grep "is" taste.txt 
+grep -w "is" taste.txt 
+grep "is" taste.txt 
+grep -c "is" taste.txt 
+grep -n "is" taste.txt 
+grep -v "is" taste.txt 
+grep "Is" taste.txt 
+grep -i "Is" taste.txt 
+grep "^is" taste.txt 
+grep "is$" taste.txt 
+grep "^is$" taste.txt 
+cat > select.txt
+grep "dc" select.txt 
+grep "dac" select.txt 
+grep "duc" select.txt 
+grep "dic" select.txt 
+grep "d[aui]c" select.txt 
+grep "d[^aui]c" select.txt 
+grep "d.c" select.txt 
+grep "d*c" select.txt 
+grep "d\*c" select.txt 
+grep "d[*]c" select.txt 
+grep -F "d*c" select.txt 
+fgrep "d*c" select.txt 
+cat > repeat.txt
+grep "dac" repeat.txt 
+grep "d.c" repeat.txt 
+grep "da*c" repeat.txt 
+grep "da?c" repeat.txt 
+grep -E "da?c" repeat.txt 
+egrep "da?c" repeat.txt 
+egrep "da+c" repeat.txt 
+egrep "da{4}c" repeat.txt 
+egrep "da{2,4}c" repeat.txt 
+egrep "da{2,}c" repeat.txt 
+egrep "da{,4}c" repeat.txt 
+egrep "daac" repeat.txt 
+egrep "d[aa]c" repeat.txt 
+egrep "d(aa)c" repeat.txt 
+egrep "d(aa){2}c" repeat.txt 
+egrep "d(aa){3}c" repeat.txt 
+egrep "d[aa]{2}c" repeat.txt 
+egrep "d[aa]{3}c" repeat.txt 
+egrep "good|cake" taste.txt 
+egrep -R "-s" .
+egrep -R "is" .

@@ -1,0 +1,82 @@
+who | wc
+ls
+cd d1/d2/d3/d4
+touch f1.txt f2.txt f3.txt
+ls
+cd -
+rm d1/d2/d3/d4/*
+ls d1/d2/d3/d4
+ls
+ls -l f3.txt 
+ls -l f?.txt 
+touch fa.txt
+ls -l f?.txt 
+ls *.txt
+ls
+touch file1.txt file2.txt file3.txt
+ls
+rename "s/file/demo/" *.txt
+ls
+rename "s/.txt/.doc/" *.txt
+ls
+ls -l
+stat demo.doc 
+ls -l
+cd ..
+ls -l
+ls -l demo.txt 
+chmod 0 demo.txt 
+ls -l demo.txt 
+chmod +x demo.txt 
+ls -l demo.txt 
+chmod +r demo.txt 
+ls -l demo.txt 
+chmod +w demo.txt 
+ls -l demo.txt 
+chmod -w demo.txt 
+ls -l demo.txt 
+chmod -r demo.txt 
+ls -l demo.txt 
+chmod -x demo.txt 
+ls -l demo.txt 
+chmod g+r demo.txt 
+ls -l demo.txt 
+chmod u+rwx demo.txt 
+ls -l demo.txt 
+chmod g+w o+r demo.txt 
+ls -l demo.txt 
+chmod 764 demo.txt 
+ls -l demo.txt 
+chown osboxes demo.txt
+sudo chown osboxes demo.txt
+ls -l demo.txt 
+sudo chown :osboxes demo.txt
+ls -l demo.txt 
+sudo chown sunbeam:sunbeam demo.txt 
+ls -l demo.txt 
+vim vim.txt
+mkdir scripts
+cd scripts/
+ls
+vim script01.sh
+ls
+bash script01.sh 
+./script01.sh
+ls -l
+chmod +x script01.sh 
+./script01.sh
+10 + 20
+expr 10 + 20
+expr 30 - 10
+expr 30 / 10
+expr 30 * 10
+expr 30 \* 10
+expr 1.5 + 2
+bc
+echo "1.5 + 2"
+echo "1.5 + 2" | bc
+seq 10
+seq 11 20
+seq 11 2 20
+vim ~/.vimrc
+vim ~/.bashrc
